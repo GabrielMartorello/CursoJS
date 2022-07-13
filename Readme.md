@@ -1,1 +1,1 @@
-Estudo de JS
+Estudo de JS.
