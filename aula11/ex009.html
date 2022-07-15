@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de regiao</title>
+</head>
+<body>
+    <h1>Teste de regiao</h1>
+    Digite seu pais : <input type ="text" name="pais" id="pais">
+    <input type ="button" value="Verificar" onclick="Verificar()">
+    <div id = "res">
+    </div> 
+    <script>
+        function Verificar(){
+            var pais = document.querySelector ('input#pais');  
+            var res = document.querySelector ('div#res');
+            var p = String(pais.value)
+            
+             if (p == 'Brasil') {
+                res.innerHTML += `<p> voce e Brasileiro</p>`
+             }
+             else {
+                res.innerHTML += `<p> voce e Gringo </p>`
+             }
+        }
+    </script>
+</body>
+</html>
