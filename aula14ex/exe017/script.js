@@ -6,6 +6,7 @@ function tabuada() {
     } 
     else {
         var n = Number(num.value)
+        console.log(typeof(num.value));
         var c = 1
         tab.innerHTML = ''
         while (c <= 10) {
